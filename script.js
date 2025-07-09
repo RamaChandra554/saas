@@ -10,13 +10,13 @@ document.addEventListener("DOMContentLoaded", function () {
     discountedPrice: "₹299",
     image: "https://www.nariyal.co.in/cdn/shop/files/Sapth_By_Nariyal.webp?v=1749196119&width=360",
     rating: 5,
-    category: "Coconut Oil",
+    category: "haircare",
     featured: true,
     description: "Cold-pressed, pure virgin coconut oil suitable for cooking and skincare.",
     uses: "Hair oil, body moisturizer, cooking, baby massage.",
     benefits: "Improves hair strength, nourishes skin, boosts immunity.",
     manufacturedDate: "2025-06-01",
-    expiryDuration: 18, // in months
+    expiryDuration: 18,
     expectedDeliveryDays: 3
   },
   {
@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
     discountedPrice: "₹199",
     image: "https://www.nariyal.co.in/cdn/shop/files/facecleanserpackof1.jpg?v=1749888155&width=360",
     rating: 4,
-    category: "Coconut Vinegar",
+    category: "healthcare",
     featured: true,
     description: "Raw, unfiltered coconut vinegar with mother of vinegar intact.",
     uses: "Salad dressing, detox drink, skin toner.",
@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", function () {
     discountedPrice: "₹249",
     image: "https://www.nariyal.co.in/cdn/shop/files/Energizingrevitalizingsoap.jpg?v=1748420091&width=360",
     rating: 5,
-    category: "Coconut Flour",
+    category: "healthcare",
     featured: true,
     description: "Gluten-free, high-fiber flour made from dried coconut meat.",
     uses: "Baking, thickening agent, gluten-free recipes.",
@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", function () {
     discountedPrice: "₹349",
     image: "https://www.nariyal.co.in/cdn/shop/files/BrighteningSoftSmoothSkinSoap.webp?v=1748421281&width=360",
     rating: 5,
-    category: "Coconut Oil",
+    category: "haircare",
     featured: false,
     description: "Cold-extracted oil retaining all natural nutrients.",
     uses: "Cooking, oil pulling, hair & skin care.",
@@ -82,7 +82,7 @@ document.addEventListener("DOMContentLoaded", function () {
     discountedPrice: "₹179",
     image: "https://www.nariyal.co.in/cdn/shop/files/Serumpackof1.jpg?v=1749885499&width=360",
     rating: 4,
-    category: "Coconut Sugar",
+    category: "healthcare",
     featured: true,
     description: "Natural sweetener with low glycemic index from coconut palm sap.",
     uses: "Sweetening beverages, baking, cooking.",
@@ -100,7 +100,7 @@ document.addEventListener("DOMContentLoaded", function () {
     discountedPrice: "₹299",
     image: "https://www.nariyal.co.in/cdn/shop/files/Tan_Removal_Soap_448319a3-87a7-4873-8415-0f6cfef815cc.webp?v=1748690041&width=360",
     rating: 4,
-    category: "Coconut Milk",
+    category: "healthcare",
     featured: false,
     description: "Instant coconut milk powder, dairy-free and vegan-friendly.",
     uses: "Cooking, smoothies, dairy substitute.",
@@ -108,7 +108,81 @@ document.addEventListener("DOMContentLoaded", function () {
     manufacturedDate: "2025-06-05",
     expiryDuration: 12,
     expectedDeliveryDays: 4
-  }
+  },
+
+  // New Products
+  {
+    id: 7,
+    name: "Hydrating Coconut Body Lotion",
+    price: "₹349",
+    originalPrice: "₹399",
+    discount: 13,
+    discountedPrice: "₹349",
+    image: "https://www.nariyal.co.in/cdn/shop/files/bodylotion.jpg",
+    rating: 4,
+    category: "bodycare",
+    featured: true,
+    description: "Moisturizing body lotion with coconut oil for smooth skin.",
+    uses: "Daily body moisturizing.",
+    benefits: "Hydrates skin, prevents dryness, soothing effect.",
+    manufacturedDate: "2025-06-20",
+    expiryDuration: 18,
+    expectedDeliveryDays: 3
+  },
+  {
+    id: 8,
+    name: "Nourishing Coconut Shampoo",
+    price: "₹299",
+    originalPrice: "₹349",
+    discount: 14,
+    discountedPrice: "₹299",
+    image: "https://www.nariyal.co.in/cdn/shop/files/shampoo.jpg",
+    rating: 4,
+    category: "haircare",
+    featured: true,
+    description: "Gentle shampoo with coconut extract for all hair types.",
+    uses: "Hair wash, scalp nourishment.",
+    benefits: "Strengthens roots, reduces hair fall, adds shine.",
+    manufacturedDate: "2025-06-15",
+    expiryDuration: 24,
+    expectedDeliveryDays: 4
+  },
+  {
+    id: 9,
+    name: "Coconut Face Scrub",
+    price: "₹199",
+    originalPrice: "₹249",
+    discount: 20,
+    discountedPrice: "₹199",
+    image: "https://www.nariyal.co.in/cdn/shop/files/facescrub.jpg",
+    rating: 5,
+    category: "bodycare",
+    featured: false,
+    description: "Exfoliating scrub with natural coconut granules.",
+    uses: "Face exfoliation.",
+    benefits: "Removes dead skin, unclogs pores, softens skin.",
+    manufacturedDate: "2025-05-30",
+    expiryDuration: 12,
+    expectedDeliveryDays: 2
+  },
+  {
+    id: 10,
+    name: "Coconut Herbal Hair Mask",
+    price: "₹349",
+    originalPrice: "₹449",
+    discount: 22,
+    discountedPrice: "₹349",
+    image: "https://www.nariyal.co.in/cdn/shop/files/hairmask.jpg",
+    rating: 5,
+    category: "haircare",
+    featured: false,
+    description: "Repairing mask enriched with coconut and herbs.",
+    uses: "Hair treatment once a week.",
+    benefits: "Repairs damage, deep conditioning, prevents breakage.",
+    manufacturedDate: "2025-06-02",
+    expiryDuration: 18,
+    expectedDeliveryDays: 3
+  },
 ];
 
   // Create product card HTML
@@ -240,66 +314,91 @@ function createProductCard(product) {
   });
 
   // Cart functions and rendering
-  function formatPrice(price) {
-    return parseInt(price.replace("₹", "").replace(",", ""));
+function formatPrice(price) {
+  return parseInt(price.toString().replace("₹", "").replace(/,/g, ""));
+}
+
+function renderCart() {
+  const cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+  const cartItemsContainer = document.getElementById("cart-items");
+  const cartTotalEl = document.getElementById("cart-total");
+  const itemCountEl = document.getElementById("item-count");
+  const priceOriginalEl = document.getElementById("price-original");
+  const discountEl = document.getElementById("discount");
+  const protectFeeEl = document.getElementById("protect-fee");
+  const youSaveEl = document.getElementById("you-save");
+
+  if (!cartItemsContainer || !cartTotalEl) return;
+
+  if (cart.length === 0) {
+    cartItemsContainer.innerHTML = "<p class='text-center text-muted'>Your cart is empty.</p>";
+    cartTotalEl.textContent = "₹0";
+    itemCountEl.textContent = "0";
+    return;
   }
 
-  function renderCart() {
-    const cart = JSON.parse(localStorage.getItem("cart")) || [];
-    const cartItemsContainer = document.getElementById("cart-items");
-    const cartTotalEl = document.getElementById("cart-total");
+  cartItemsContainer.innerHTML = "";
 
-    if (!cartItemsContainer || !cartTotalEl) return; // In case cart elements don't exist on page
+  let total = 0;
+  let originalTotal = 0;
+  let protectFee = 0;
+  let itemCount = 0;
 
-    if (cart.length === 0) {
-      cartItemsContainer.innerHTML = "<p class='text-center text-muted'>Your cart is empty.</p>";
-      cartTotalEl.textContent = "Total: ₹0";
-      return;
-    }
+  cart.forEach(item => {
+    const price = formatPrice(item.price);
+    const originalPrice = formatPrice(item.originalPrice || item.price);
+    const itemTotal = price * item.quantity;
+    const originalItemTotal = originalPrice * item.quantity;
 
-    cartItemsContainer.innerHTML = "";
-    let total = 0;
+    total += itemTotal;
+    originalTotal += originalItemTotal;
+    protectFee += 99; // assume per item fixed fee
+    itemCount += item.quantity;
 
-    cart.forEach(item => {
-      const itemTotal = item.quantity * formatPrice(item.price);
-      total += itemTotal;
+    const card = document.createElement("div");
+    card.className = "border-bottom pb-3 mb-3";
 
-      const card = document.createElement("div");
-      card.className = "border-bottom pb-3 mb-2";
+    card.innerHTML = `
+      <div class="row g-3 align-items-center">
+        <div class="col-auto" style="max-width: 140px;">
+          <img src="${item.image}" class="img-fluid rounded" alt="${item.name}">
+        </div>
+        <div class="col">
+          <h5 class="card-title mb-1">${item.name}</h5>
+          <p class="text-muted mb-1">Category: ${item.category}</p>
+          <p class="text-success small mb-2">In stock</p>
 
-      card.innerHTML = `
-        <div class="row g-3 align-items-center">
-          <div class="col-md-2">
-            <img src="${item.image}" class="img-fluid rounded" alt="${item.name}">
-          </div>
-
-          <div class="col-md-6">
-            <h5 class="card-title mb-1">${item.name}</h5>
-            <p class="text-muted mb-1">Category: ${item.category}</p>
-            <p class="text-success small mb-2">In stock</p>
-
-            <div class="d-flex align-items-center gap-2">
-              <div class="border border-warning d-flex align-items-center justify-content-around px-2 py-1 rounded-pill">
-                <button class="btn btn-sm px-2" onclick="decreaseQty(${item.id})">−</button>
-                <span class="fw-bold mx-2">${item.quantity}</span>
-                <button class="btn btn-sm px-2" onclick="increaseQty(${item.id})">+</button>
-              </div>
-              <button class="btn btn-link text-danger ms-3 p-0" onclick="removeFromCart(${item.id})">Delete</button>
+          <div class="d-flex align-items-center gap-2">
+            <div class="border border-warning d-flex align-items-center justify-content-around px-2 py-1 rounded-pill">
+              <button class="btn btn-sm px-2" onclick="decreaseQty(${item.id})">−</button>
+              <span class="fw-bold mx-2">${item.quantity}</span>
+              <button class="btn btn-sm px-2" onclick="increaseQty(${item.id})">+</button>
             </div>
-          </div>
-
-          <div class="col-md-4 text-end">
-            <div class="h5 mb-0">₹${itemTotal.toLocaleString()}</div>
-            <small class="text-muted">₹${formatPrice(item.price)} x ${item.quantity}</small>
+            <button class="btn btn-link text-danger ms-3 p-0" onclick="removeFromCart(${item.id})">Delete</button>
           </div>
         </div>
-      `;
+        <div class="col text-end">
+          <div class="h5 mb-0">₹${itemTotal.toLocaleString()}</div>
+          <small class="text-muted">₹${price.toLocaleString()} x ${item.quantity}</small>
+        </div>
+      </div>
+    `;
 
-      cartItemsContainer.appendChild(card);
-    });
+    cartItemsContainer.appendChild(card);
+  });
 
-    cartTotalEl.textContent = `Total: ₹${total.toLocaleString()}`;
-  }
+  const discount = originalTotal - total;
+  const finalAmount = total + protectFee;
+
+  // Update price summary
+  cartTotalEl.textContent = `₹${finalAmount.toLocaleString()}`;
+  itemCountEl.textContent = itemCount;
+  priceOriginalEl.textContent = `₹${originalTotal.toLocaleString()}`;
+  discountEl.textContent = `− ₹${discount.toLocaleString()}`;
+  protectFeeEl.textContent = `₹${protectFee.toLocaleString()}`;
+  youSaveEl.textContent = `₹${discount.toLocaleString()}`;
+}
 
   window.increaseQty = function (id) {
     const cart = JSON.parse(localStorage.getItem("cart")) || [];
