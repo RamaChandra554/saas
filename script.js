@@ -110,7 +110,7 @@ document.addEventListener("DOMContentLoaded", function () {
     expectedDeliveryDays: 4
   },
 
-  // New Products
+  
   {
     id: 7,
     name: "Hydrating Coconut Body Lotion",
@@ -182,7 +182,366 @@ document.addEventListener("DOMContentLoaded", function () {
     manufacturedDate: "2025-06-02",
     expiryDuration: 18,
     expectedDeliveryDays: 3
+  },{
+    id: 11,
+    name: "Keratin Coconut Conditioner",
+    price: "₹279",
+    originalPrice: "₹329",
+    discount: 15,
+    discountedPrice: "₹279",
+    image: "https://www.nariyal.co.in/cdn/shop/files/shampoo.jpg",
+    rating: 4,
+    category: "haircare",
+    featured: false,
+    description: "Strengthening conditioner with coconut and keratin proteins.",
+    uses: "After shampooing to nourish and smooth hair.",
+    benefits: "Reduces frizz, boosts shine, softens hair.",
+    manufacturedDate: "2025-06-01",
+    expiryDuration: 18,
+    expectedDeliveryDays: 3
   },
+  {
+    id: 12,
+    name: "Coconut Lip Balm",
+    price: "₹99",
+    originalPrice: "₹129",
+    discount: 23,
+    discountedPrice: "₹99",
+    image: "https://www.nariyal.co.in/cdn/shop/files/Serumpackof1.jpg?v=1749885499&width=360",
+    rating: 5,
+    category: "bodycare",
+    featured: false,
+    description: "Soothing lip balm made with pure coconut oil.",
+    uses: "Daily lip moisturization.",
+    benefits: "Heals cracks, softens lips, natural shine.",
+    manufacturedDate: "2025-05-10",
+    expiryDuration: 12,
+    expectedDeliveryDays: 2
+  },
+  {
+    id: 13,
+    name: "Coconut Energy Bites",
+    price: "₹249",
+    originalPrice: "₹299",
+    discount: 17,
+    discountedPrice: "₹249",
+    image: "https://www.nariyal.co.in/cdn/shop/files/Energizingrevitalizingsoap.jpg?v=1748420091&width=360",
+    rating: 4,
+    category: "healthcare",
+    featured: false,
+    description: "Healthy snacks made with coconut and nuts.",
+    uses: "Midday snack, pre/post workout.",
+    benefits: "Boosts energy, natural ingredients, protein-rich.",
+    manufacturedDate: "2025-06-03",
+    expiryDuration: 6,
+    expectedDeliveryDays: 3
+  },
+  {
+    id: 14,
+    name: "Coconut Foot Cream",
+    price: "₹149",
+    originalPrice: "₹199",
+    discount: 25,
+    discountedPrice: "₹149",
+    image: "https://www.nariyal.co.in/cdn/shop/files/bodylotion.jpg",
+    rating: 4,
+    category: "bodycare",
+    featured: false,
+    description: "Intensive repair cream for cracked heels and dry feet.",
+    uses: "Nightly foot care routine.",
+    benefits: "Heals cracks, softens skin, soothing aroma.",
+    manufacturedDate: "2025-06-15",
+    expiryDuration: 18,
+    expectedDeliveryDays: 4
+  },
+  {
+    id: 15,
+    name: "Digestive Coconut Mix",
+    price: "₹199",
+    originalPrice: "₹249",
+    discount: 20,
+    discountedPrice: "₹199",
+    image: "https://www.nariyal.co.in/cdn/shop/files/facecleanserpackof1.jpg?v=1749888155&width=360",
+    rating: 5,
+    category: "healthcare",
+    featured: false,
+    description: "A digestive-friendly coconut blend with herbs.",
+    uses: "Post-meal digestive boost.",
+    benefits: "Aids digestion, light and refreshing, all-natural.",
+    manufacturedDate: "2025-04-20",
+    expiryDuration: 12,
+    expectedDeliveryDays: 3
+  },
+  {
+    id: 16,
+    name: "Coconut Body Scrub Bar",
+    price: "₹199",
+    originalPrice: "₹249",
+    discount: 20,
+    discountedPrice: "₹199",
+    image: "https://www.nariyal.co.in/cdn/shop/files/Tan_Removal_Soap_448319a3-87a7-4873-8415-0f6cfef815cc.webp?v=1748690041&width=360",
+    rating: 5,
+    category: "bodycare",
+    featured: false,
+    description: "Handmade exfoliating soap bar with coconut fiber.",
+    uses: "Weekly exfoliation for body.",
+    benefits: "Removes dead skin, smooth finish, eco-friendly.",
+    manufacturedDate: "2025-06-08",
+    expiryDuration: 18,
+    expectedDeliveryDays: 3
+  },
+  {
+    id: 17,
+    name: "Coconut Protein Smoothie Mix",
+    price: "₹349",
+    originalPrice: "₹399",
+    discount: 13,
+    discountedPrice: "₹349",
+    image: "https://www.nariyal.co.in/cdn/shop/files/hairmask.jpg",
+    rating: 4,
+    category: "healthcare",
+    featured: false,
+    description: "Delicious coconut-based smoothie powder for fitness.",
+    uses: "Breakfast or post-workout drink.",
+    benefits: "High protein, dairy-free, energy-boosting.",
+    manufacturedDate: "2025-06-01",
+    expiryDuration: 12,
+    expectedDeliveryDays: 3
+  },
+  {
+    id: 18,
+    name: "Coconut Hair Tonic",
+    price: "₹299",
+    originalPrice: "₹349",
+    discount: 14,
+    discountedPrice: "₹299",
+    image: "https://www.nariyal.co.in/cdn/shop/files/shampoo.jpg",
+    rating: 5,
+    category: "haircare",
+    featured: false,
+    description: "Hair tonic with fermented coconut for scalp vitality.",
+    uses: "Daily hair spray or massage.",
+    benefits: "Stimulates growth, reduces dandruff, cools scalp.",
+    manufacturedDate: "2025-05-18",
+    expiryDuration: 12,
+    expectedDeliveryDays: 4
+  },
+  {
+    id: 19,
+    name: "Coconut Hand Wash",
+    price: "₹149",
+    originalPrice: "₹199",
+    discount: 25,
+    discountedPrice: "₹149",
+    image: "https://www.nariyal.co.in/cdn/shop/files/bodylotion.jpg",
+    rating: 4,
+    category: "bodycare",
+    featured: false,
+    description: "Mild coconut hand wash with moisturizing formula.",
+    uses: "Regular hand cleansing.",
+    benefits: "Gentle on skin, natural fragrance, hydrating.",
+    manufacturedDate: "2025-06-10",
+    expiryDuration: 18,
+    expectedDeliveryDays: 2
+  },
+  {
+    id: 20,
+    name: "Coconut Sleep Aid Capsules",
+    price: "₹399",
+    originalPrice: "₹499",
+    discount: 20,
+    discountedPrice: "₹399",
+    image: "https://www.nariyal.co.in/cdn/shop/files/Serumpackof1.jpg?v=1749885499&width=360",
+    rating: 4,
+    category: "healthcare",
+    featured: false,
+    description: "Natural coconut + herbs formula to support deep sleep.",
+    uses: "Take 1 capsule before bed.",
+    benefits: "Promotes restful sleep, non-habit forming, natural.",
+    manufacturedDate: "2025-05-25",
+    expiryDuration: 24,
+    expectedDeliveryDays: 3
+  },
+  {
+    id: 21,
+    name: "Coconut Beard Balm",
+    price: "₹249",
+    originalPrice: "₹299",
+    discount: 17,
+    discountedPrice: "₹249",
+    image: "https://www.nariyal.co.in/cdn/shop/files/facecleanserpackof1.jpg?v=1749888155&width=360",
+    rating: 4,
+    category: "haircare",
+    featured: false,
+    description: "Beard conditioning balm with pure coconut oil.",
+    uses: "Apply daily after shower.",
+    benefits: "Softens beard, adds shine, promotes healthy growth.",
+    manufacturedDate: "2025-06-01",
+    expiryDuration: 12,
+    expectedDeliveryDays: 2
+  },
+  {
+    id: 22,
+    name: "Brightening Coconut Face Pack",
+    price: "₹299",
+    originalPrice: "₹349",
+    discount: 14,
+    discountedPrice: "₹299",
+    image: "https://www.nariyal.co.in/cdn/shop/files/BrighteningSoftSmoothSkinSoap.webp?v=1748421281&width=360",
+    rating: 5,
+    category: "bodycare",
+    featured: false,
+    description: "Clay-based coconut mask for radiant skin.",
+    uses: "Use twice weekly.",
+    benefits: "Brightens skin, removes tan, natural detox.",
+    manufacturedDate: "2025-06-11",
+    expiryDuration: 18,
+    expectedDeliveryDays: 3
+  },
+  {
+    id: 23,
+    name: "Coconut Detox Tablets",
+    price: "₹349",
+    originalPrice: "₹399",
+    discount: 13,
+    discountedPrice: "₹349",
+    image: "https://www.nariyal.co.in/cdn/shop/files/Energizingrevitalizingsoap.jpg?v=1748420091&width=360",
+    rating: 4,
+    category: "healthcare",
+    featured: false,
+    description: "Natural cleansing tablets with activated coconut charcoal.",
+    uses: "Take once daily.",
+    benefits: "Flushes toxins, improves metabolism, gut-friendly.",
+    manufacturedDate: "2025-05-19",
+    expiryDuration: 24,
+    expectedDeliveryDays: 3
+  },
+  {
+    id: 24,
+    name: "Coconut Under Eye Cream",
+    price: "₹199",
+    originalPrice: "₹249",
+    discount: 20,
+    discountedPrice: "₹199",
+    image: "https://www.nariyal.co.in/cdn/shop/files/facecleanserpackof1.jpg?v=1749888155&width=360",
+    rating: 4,
+    category: "bodycare",
+    featured: false,
+    description: "Soothing under-eye cream with coconut extract.",
+    uses: "Apply nightly.",
+    benefits: "Reduces puffiness, lightens dark circles.",
+    manufacturedDate: "2025-06-09",
+    expiryDuration: 12,
+    expectedDeliveryDays: 4
+  },
+  {
+    id: 25,
+    name: "Coconut Massage Oil",
+    price: "₹279",
+    originalPrice: "₹349",
+    discount: 20,
+    discountedPrice: "₹279",
+    image: "https://www.nariyal.co.in/cdn/shop/files/bodylotion.jpg",
+    rating: 5,
+    category: "bodycare",
+    featured: false,
+    description: "Relaxing massage oil with pure coconut aroma.",
+    uses: "Full body massage.",
+    benefits: "Relieves stress, improves blood flow.",
+    manufacturedDate: "2025-06-12",
+    expiryDuration: 18,
+    expectedDeliveryDays: 2
+  },
+  {
+    id: 26,
+    name: "Coconut Baby Lotion",
+    price: "₹199",
+    originalPrice: "₹249",
+    discount: 20,
+    discountedPrice: "₹199",
+    image: "https://www.nariyal.co.in/cdn/shop/files/shampoo.jpg",
+    rating: 5,
+    category: "bodycare",
+    featured: false,
+    description: "Gentle lotion for baby skin with coconut oil.",
+    uses: "Daily use after bath.",
+    benefits: "Softens skin, chemical-free, calming.",
+    manufacturedDate: "2025-06-01",
+    expiryDuration: 12,
+    expectedDeliveryDays: 2
+  },
+  {
+    id: 27,
+    name: "Coconut Breath Freshener",
+    price: "₹149",
+    originalPrice: "₹199",
+    discount: 25,
+    discountedPrice: "₹149",
+    image: "https://www.nariyal.co.in/cdn/shop/files/hairmask.jpg",
+    rating: 4,
+    category: "healthcare",
+    featured: false,
+    description: "Natural breath mints made with coconut and mint oils.",
+    uses: "Use as needed.",
+    benefits: "Freshens breath, natural taste, no sugar.",
+    manufacturedDate: "2025-06-01",
+    expiryDuration: 12,
+    expectedDeliveryDays: 2
+  },
+  {
+    id: 28,
+    name: "Coconut SPF Sunscreen",
+    price: "₹299",
+    originalPrice: "₹349",
+    discount: 14,
+    discountedPrice: "₹299",
+    image: "https://www.nariyal.co.in/cdn/shop/files/Serumpackof1.jpg?v=1749885499&width=360",
+    rating: 5,
+    category: "bodycare",
+    featured: false,
+    description: "SPF 30+ sunscreen with coconut extract.",
+    uses: "Apply before sun exposure.",
+    benefits: "Protects from UV, moisturizes, lightweight.",
+    manufacturedDate: "2025-06-07",
+    expiryDuration: 24,
+    expectedDeliveryDays: 3
+  },
+  {
+    id: 29,
+    name: "Coconut Skin Toner",
+    price: "₹199",
+    originalPrice: "₹249",
+    discount: 20,
+    discountedPrice: "₹199",
+    image: "https://www.nariyal.co.in/cdn/shop/files/facecleanserpackof1.jpg?v=1749888155&width=360",
+    rating: 4,
+    category: "bodycare",
+    featured: false,
+    description: "Refreshing toner made with distilled coconut water.",
+    uses: "Spray or apply with cotton.",
+    benefits: "Tightens pores, refreshes skin.",
+    manufacturedDate: "2025-06-15",
+    expiryDuration: 18,
+    expectedDeliveryDays: 3
+  },
+  {
+    id: 30,
+    name: "Coconut Nail Cream",
+    price: "₹149",
+    originalPrice: "₹199",
+    discount: 25,
+    discountedPrice: "₹149",
+    image: "https://www.nariyal.co.in/cdn/shop/files/bodylotion.jpg",
+    rating: 4,
+    category: "bodycare",
+    featured: false,
+    description: "Strengthening cream for nails with coconut nutrients.",
+    uses: "Apply to nails daily.",
+    benefits: "Improves nail strength, reduces brittleness.",
+    manufacturedDate: "2025-06-11",
+    expiryDuration: 12,
+    expectedDeliveryDays: 2
+  }
 ];
 
   // Create product card HTML
@@ -252,6 +611,80 @@ function createProductCard(product) {
       allProductsContainer.insertAdjacentHTML("beforeend", createProductCard(product));
     });
   }
+
+  // filters and sort
+
+  function applyFilters(products) {
+  const category = document.getElementById("categoryFilter").value;
+  const discount = parseInt(document.getElementById("discountFilter").value);
+  const expiry = parseInt(document.getElementById("expiryFilter").value);
+  const sort = document.getElementById("sortSelect").value;
+
+  let filtered = [...products];
+
+  // Category Filter
+  if (category) {
+    filtered = filtered.filter(p => p.category === category);
+  }
+
+  // Discount Filter
+  if (discount) {
+    filtered = filtered.filter(p => p.discount >= discount);
+  }
+
+  // Expiry Filter
+  if (expiry) {
+    if (expiry === 12) {
+      filtered = filtered.filter(p => p.expiryDuration < 12);
+    } else if (expiry === 24) {
+      filtered = filtered.filter(p => p.expiryDuration >= 12 && p.expiryDuration <= 24);
+    }
+  }
+
+  // Sort Logic
+  switch (sort) {
+    case "price-asc":
+      filtered.sort((a, b) => parseInt(a.discountedPrice.replace(/[₹,]/g, '')) - parseInt(b.discountedPrice.replace(/[₹,]/g, '')));
+      break;
+    case "price-desc":
+      filtered.sort((a, b) => parseInt(b.discountedPrice.replace(/[₹,]/g, '')) - parseInt(a.discountedPrice.replace(/[₹,]/g, '')));
+      break;
+    case "discount-desc":
+      filtered.sort((a, b) => b.discount - a.discount);
+      break;
+    case "expiry-asc":
+      filtered.sort((a, b) => a.expiryDuration - b.expiryDuration);
+      break;
+  }
+
+  return filtered;
+}
+
+function renderAllProducts() {
+  const container = document.getElementById("all-products-container");
+  container.innerHTML = "";
+
+  const filteredProducts = applyFilters(allProducts);
+  if (filteredProducts.length === 0) {
+    container.innerHTML = `<div class="col-12"><p class="text-center text-muted">No products match your filters.</p></div>`;
+  }
+
+  filteredProducts.forEach(product => {
+    container.insertAdjacentHTML("beforeend", createProductCard(product));
+  });
+}
+
+// Bind events
+["categoryFilter", "discountFilter", "expiryFilter", "sortSelect"].forEach(id => {
+  document.getElementById(id).addEventListener("change", renderAllProducts);
+});
+
+// Render on load
+if (document.getElementById("all-products-container")) {
+  renderAllProducts();
+}
+
+  
 
   // Single event listener for add to cart buttons
   document.addEventListener("click", function (e) {
