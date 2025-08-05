@@ -19,6 +19,10 @@
 
     <!-- Responsive Offcanvas Width for Small Screens -->
     <style>
+        #all-products-container, .all-products{
+            background-color: #c0e9cc;
+        }
+      
         @media (max-width: 430px) {
             .offcanvas.offcanvas-end {
                 width: 50% !important;
@@ -28,10 +32,11 @@
 
         .product-card {
             transition: transform 0.3s ease, box-shadow 0.3s ease;
+            background-color: white;
         }
 
         .product-card:hover {
-            transform: translateY(-5px);
+            transform: scale(1.05);
             box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
         }
     </style>
@@ -131,7 +136,7 @@
                     </div>
                 </div>
             </div>
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-2" id="all-products-container">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-2 " id="all-products-container">
             <!-- Products will be inserted here -->
         </div>
         </div>
@@ -217,9 +222,9 @@
         </div>
     </footer>
 
-    <!-- Optional Custom JS -->
-    <script src="script.js"></script>
-
+    <!-- JS -->
+    <script src="script.js" defer></script>
+    <script src="./src/data/products-data.js"></script>
 
     <!-- Bootstrap JS (single latest version) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>

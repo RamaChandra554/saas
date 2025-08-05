@@ -3,6 +3,7 @@ body {
     font-family: 'Poppins', sans-serif;
     color: #333;
     line-height: 1.6;
+    background-color: #11503c;
 }
 
 a {
@@ -61,16 +62,18 @@ a:hover {
 }
 
 .category-card:hover {
-    transform: translateY(-10px);
+    transform: scale(1.05);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
 .category-card .card-body {
+    background-color: white;
     padding: 1.5rem;
 }
 
 /* Product Cards */
 .product-card {
+    background-color: white;
     transition: all 0.3s ease;
     border-radius: 10px;
     overflow: hidden;
@@ -80,7 +83,7 @@ a:hover {
 }
 
 .product-card:hover {
-    transform: translateY(-5px);
+    transform: scale(1.05);
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
 }
 
@@ -90,6 +93,7 @@ a:hover {
 }
 
 .product-card .card-body {
+    background-color: #f8f9fa;
     padding: 1.5rem;
 }
 
@@ -116,7 +120,7 @@ a:hover {
 }
 
 .testimonial-card:hover {
-    transform: translateY(-5px);
+    transform: scale(1.05);
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
 }
 
@@ -129,7 +133,7 @@ a:hover {
 }
 
 .feature-box:hover {
-    transform: translateY(-5px);
+    transform:scale(1.05);
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
 }
 
